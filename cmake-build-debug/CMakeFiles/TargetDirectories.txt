@@ -1,0 +1,3 @@
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/HW1.dir
