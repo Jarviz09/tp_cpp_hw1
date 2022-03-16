@@ -1,0 +1,4 @@
+Jopa.Popa 1 0.00411608
+TestOpenedFile.isOpened 0 0
+---
+TestOpenedFile.isOpened

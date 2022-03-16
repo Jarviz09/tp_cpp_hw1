@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/food.h
+bits/types/FILE.h
+-
+stdlib.h
+-
+stdio.h
+-
+
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/utils.h
+food.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/food.h
+
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/main.c
+stdio.h
+-
+include/food.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/food.h
+include/utils.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/utils.h
+
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c
+../include/food.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/food.h
+../include/utils.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/utils.h
+string.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/string.h
+
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c
+stdio.h
+-
+../include/utils.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/utils.h
+

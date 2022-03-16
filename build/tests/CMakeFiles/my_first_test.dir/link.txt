@@ -1,0 +1,1 @@
+/usr/bin/c++  -Werror -Wextra -Wpedantic -Wall   CMakeFiles/my_first_test.dir/tests.cpp.o  -o my_first_test  ../lib/libgtest_main.a ../lib/libgtest.a -lpthread 
