@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/include
 
-C_FLAGS = -g -std=gnu99
+C_FLAGS = -Werror -Wextra -Wpedantic -Wall -g -std=gnu99
 

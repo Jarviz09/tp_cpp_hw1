@@ -30,7 +30,12 @@ typedef struct composite_ration {
 } composite_ration;
 
 
+typedef struct selected_array {
+    char** names;
+    size_t size;
+} selected_array;
+
 composite_ration init_ration(FILE* fp);
-void select_breakfast(composite_ration, filter_fields);
+selected_array select_breakfast(composite_ration, filter_fields);
 
 #endif //HW1_FOOD_H

@@ -22,14 +22,11 @@ composite_ration init_ration(FILE* fp) {
                 &Object.array[i].carb,
                 &Object.array[i].energy) == 4;
 
-        if (isNameReadOk == NULL || !isRationReadOk) return Object;
+        if (isNameReadOk == NULL || !isRationReadOk) break;
 
         Object.array[i].name.size = strlen(name) + 1;
 
-        Object.array[i].name.name = (char*)calloc(Object.array[i].name.size, sizeof(char));
-        if (Object.array[i].name.name == NULL) {
-            return Object;
-        }
+        Object = alloc_memory_for_name(Object, i);
 
         strncpy(Object.array[i].name.name, name, Object.array[i].name.size - 2);
         Object.array[i].name.name[Object.array[i].name.size - 1] = '\0';
@@ -40,23 +37,32 @@ composite_ration init_ration(FILE* fp) {
 
         ++i;
     }
+//    Object.len_array = i;
+    return Object;
 }
 
 
-void select_breakfast(composite_ration Object, filter_fields Filters) {
-    int is_first_entry = 0;
-    int is_exist_filtered = 0;
+selected_array select_breakfast(composite_ration Object, filter_fields Filters) {
+
+    size_t index_selected = 0;
+
+    selected_array filtered_names;
+
+    filtered_names.names = (char**) calloc(Object.len_array, sizeof(char*));
+
 
     for (size_t i = 0; i < Object.len_array; ++i) {
         if (is_selected(Object, Filters.min_protein, Filters.max_carb, i)) {
-            print_breakfast(Object, i, is_first_entry);
-            is_first_entry = 1;
-            is_exist_filtered = 1;
+            filtered_names.names[index_selected] = (char* ) calloc(Object.array[i].name.size, sizeof(char));
+            memcpy(filtered_names.names[index_selected], Object.array[i].name.name, sizeof(char)*Object.array[i].name.size);
+            ++index_selected;
         }
     }
-
-    if (!is_exist_filtered) {
-        not_found();
-    }
+    filtered_names.size = index_selected;
+    return filtered_names;
 
 }
+
+
+
+

@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 
     composite_ration comp_ration = init_ration(fp);
 
-    filter_fields Filters = read_filters();
+    filter_fields Filters = read_filters(stdin);
 
     if (Filters.min_protein == 0 || Filters.max_carb == 0) {
         printf("Введите корректно критерии поиска завтрака\n");
@@ -26,9 +26,12 @@ int main(int argc, char *argv[]) {
 
     }
 
-    select_breakfast(comp_ration, Filters);
-
+    selected_array filtered_names = select_breakfast(comp_ration, Filters);
+    print_breakfast(filtered_names);
     free_ration(comp_ration);
+    free_selected(filtered_names);
+
+
     fclose(fp);
 
     return SUCCESS;

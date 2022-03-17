@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "../include/utils.h"
 
-FILE* open_file(char* file) {
+FILE* open_file(const char* file) {
     FILE* fp;
     fp = fopen(file, "r");
     return fp;
@@ -21,11 +21,15 @@ composite_ration increase_memory(composite_ration Object) {
     return Object;
 }
 
-void print_breakfast(composite_ration dish, size_t index, int isFirstEntry) {
-    if (!isFirstEntry) {
-        printf("По вашим критериям был подобран следующий завтрак\n");
+void print_breakfast(selected_array dish) {
+
+    for (size_t i = 0; i < dish.size; ++i) {
+        printf("%s\n", dish.names[i]);
     }
-    printf("%s\n", dish.array[index].name.name);
+
+    if (dish.size == 0) {
+        printf("Завтрака по вашим критериям не найдено\n");
+    }
 }
 
 
@@ -44,18 +48,25 @@ int is_selected(composite_ration Object, double min_protein, double max_carb, si
 }
 
 
-filter_fields read_filters() {
+filter_fields read_filters(FILE* fp) {
 
     double min_protein;
     double max_carb;
-    filter_fields Filters = {0};
+    filter_fields Filters;
+    Filters.max_carb = 0;
+    Filters.min_protein = 0;
 
     printf("Введите минимально желаемое количество белков в блюде\n");
-    if (scanf("%lf", &min_protein) != 1) {
+
+
+    if (fscanf(fp,"%lf", &min_protein) != 1) {
         return Filters;
     }
+
     printf("Введите максимальное количество углеводов в блюде\n");
-    if (scanf("%lf", &max_carb) != 1) {
+
+
+    if (fscanf(fp,"%lf", &max_carb) != 1) {
         return Filters;
     }
 
@@ -66,6 +77,15 @@ filter_fields read_filters() {
 
 }
 
-void not_found() {
-    printf("Завтрака по вашим критериям не найдено\n");
+composite_ration alloc_memory_for_name(composite_ration Object, size_t index) {
+    Object.array[index].name.name = (char*)calloc(Object.array[index].name.size, sizeof(char));
+    return Object;
+}
+
+
+void free_selected(selected_array dish) {
+    for (size_t i = 0; i < dish.size; ++i) {
+        free(dish.names[i]);
+    }
+    free(dish.names);
 }

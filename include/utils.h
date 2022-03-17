@@ -10,12 +10,13 @@ typedef enum {
     INCORRECT_FILTERS
 } errors_name;
 
-FILE* open_file(char*);
-filter_fields read_filters();
-void not_found();
+FILE* open_file(const char*);
+filter_fields read_filters(FILE* fp);
 composite_ration increase_memory(composite_ration);
+composite_ration alloc_memory_for_name(composite_ration, size_t);
 int is_selected(composite_ration, double, double, size_t);
-void print_breakfast(composite_ration, size_t, int);
+void print_breakfast(selected_array);
 void free_ration(composite_ration);
+void free_selected(selected_array);
 
 #endif //HW1_UTILS_H

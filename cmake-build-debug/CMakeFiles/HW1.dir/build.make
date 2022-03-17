@@ -83,24 +83,10 @@ CMakeFiles/HW1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HW1.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/main.c -o CMakeFiles/HW1.dir/main.c.s
 
-CMakeFiles/HW1.dir/src/utils.c.o: CMakeFiles/HW1.dir/flags.make
-CMakeFiles/HW1.dir/src/utils.c.o: ../src/utils.c
-CMakeFiles/HW1.dir/src/utils.c.o: CMakeFiles/HW1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/HW1.dir/src/utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/HW1.dir/src/utils.c.o -MF CMakeFiles/HW1.dir/src/utils.c.o.d -o CMakeFiles/HW1.dir/src/utils.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c
-
-CMakeFiles/HW1.dir/src/utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HW1.dir/src/utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c > CMakeFiles/HW1.dir/src/utils.c.i
-
-CMakeFiles/HW1.dir/src/utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HW1.dir/src/utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c -o CMakeFiles/HW1.dir/src/utils.c.s
-
 CMakeFiles/HW1.dir/src/food.c.o: CMakeFiles/HW1.dir/flags.make
 CMakeFiles/HW1.dir/src/food.c.o: ../src/food.c
 CMakeFiles/HW1.dir/src/food.c.o: CMakeFiles/HW1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/HW1.dir/src/food.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/HW1.dir/src/food.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/HW1.dir/src/food.c.o -MF CMakeFiles/HW1.dir/src/food.c.o.d -o CMakeFiles/HW1.dir/src/food.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c
 
 CMakeFiles/HW1.dir/src/food.c.i: cmake_force
@@ -111,18 +97,32 @@ CMakeFiles/HW1.dir/src/food.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HW1.dir/src/food.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c -o CMakeFiles/HW1.dir/src/food.c.s
 
+CMakeFiles/HW1.dir/src/utils.c.o: CMakeFiles/HW1.dir/flags.make
+CMakeFiles/HW1.dir/src/utils.c.o: ../src/utils.c
+CMakeFiles/HW1.dir/src/utils.c.o: CMakeFiles/HW1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/HW1.dir/src/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/HW1.dir/src/utils.c.o -MF CMakeFiles/HW1.dir/src/utils.c.o.d -o CMakeFiles/HW1.dir/src/utils.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c
+
+CMakeFiles/HW1.dir/src/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HW1.dir/src/utils.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c > CMakeFiles/HW1.dir/src/utils.c.i
+
+CMakeFiles/HW1.dir/src/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HW1.dir/src/utils.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c -o CMakeFiles/HW1.dir/src/utils.c.s
+
 # Object files for target HW1
 HW1_OBJECTS = \
 "CMakeFiles/HW1.dir/main.c.o" \
-"CMakeFiles/HW1.dir/src/utils.c.o" \
-"CMakeFiles/HW1.dir/src/food.c.o"
+"CMakeFiles/HW1.dir/src/food.c.o" \
+"CMakeFiles/HW1.dir/src/utils.c.o"
 
 # External object files for target HW1
 HW1_EXTERNAL_OBJECTS =
 
 HW1: CMakeFiles/HW1.dir/main.c.o
-HW1: CMakeFiles/HW1.dir/src/utils.c.o
 HW1: CMakeFiles/HW1.dir/src/food.c.o
+HW1: CMakeFiles/HW1.dir/src/utils.c.o
 HW1: CMakeFiles/HW1.dir/build.make
 HW1: CMakeFiles/HW1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable HW1"
