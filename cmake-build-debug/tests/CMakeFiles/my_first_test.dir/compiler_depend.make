@@ -324,8 +324,12 @@ tests/CMakeFiles/my_first_test.dir/tests.cpp.o: ../tests/tests.cpp \
   ../include/food.h \
   ../src/utils.c \
   ../include/utils.h \
+  ../include/food.h \
+  ../src/food.c \
   ../include/food.h
 
+
+../src/food.c:
 
 ../src/utils.c:
 

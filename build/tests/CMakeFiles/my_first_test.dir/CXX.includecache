@@ -18,6 +18,14 @@ stdio.h
 food.h
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/include/food.h
 
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c
+../include/food.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/food.h
+../include/utils.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/include/utils.h
+string.h
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/string.h
+
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c
 stdio.h
 -
@@ -35,6 +43,8 @@ gtest/gtest.h
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/include/food.h
 ../src/utils.c
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c
+../src/food.c
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c
 
 _deps/googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

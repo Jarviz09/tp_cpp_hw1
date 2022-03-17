@@ -35,6 +35,7 @@ typedef struct selected_array {
     size_t size;
 } selected_array;
 
+
 composite_ration init_ration(FILE* fp);
 selected_array select_breakfast(composite_ration, filter_fields);
 

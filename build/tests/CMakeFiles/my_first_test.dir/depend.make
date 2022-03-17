@@ -3,6 +3,7 @@
 
 tests/CMakeFiles/my_first_test.dir/tests.cpp.o: ../include/food.h
 tests/CMakeFiles/my_first_test.dir/tests.cpp.o: ../include/utils.h
+tests/CMakeFiles/my_first_test.dir/tests.cpp.o: ../src/food.c
 tests/CMakeFiles/my_first_test.dir/tests.cpp.o: ../src/utils.c
 tests/CMakeFiles/my_first_test.dir/tests.cpp.o: ../tests/tests.cpp
 tests/CMakeFiles/my_first_test.dir/tests.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-death-test.h

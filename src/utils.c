@@ -40,6 +40,7 @@ void free_ration(composite_ration comp_ration) {
     free(comp_ration.array);
 }
 
+
 int is_selected(composite_ration Object, double min_protein, double max_carb, size_t index) {
     if (Object.array[index].protein >= min_protein && Object.array[index].carb <= max_carb) {
         return 1;
@@ -77,9 +78,15 @@ filter_fields read_filters(FILE* fp) {
 
 }
 
-composite_ration alloc_memory_for_name(composite_ration Object, size_t index) {
+food* alloc_memory_for_array(composite_ration Object) {
+    Object.array = (food*)calloc(Object.len_array, sizeof(food));
+    return Object.array;
+}
+
+
+char* alloc_memory_for_name(composite_ration Object, size_t index) {
     Object.array[index].name.name = (char*)calloc(Object.array[index].name.size, sizeof(char));
-    return Object;
+    return Object.array[index].name.name;
 }
 
 
