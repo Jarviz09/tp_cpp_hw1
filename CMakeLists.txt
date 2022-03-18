@@ -19,6 +19,5 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${PROJECT_FOOD_LIB_NAME})
 target_include_directories(HW1 PUBLIC /include)
 
-#target_compile_options(${SOURCES} PUBLIC "--coverage" "-O0")
 
 add_subdirectory(tests)

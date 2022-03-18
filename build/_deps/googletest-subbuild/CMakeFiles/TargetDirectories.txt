@@ -1,3 +1,0 @@
-/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
-/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
