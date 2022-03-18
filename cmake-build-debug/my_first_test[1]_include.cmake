@@ -1,0 +1,5 @@
+if(EXISTS "/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/my_first_test[1]_tests.cmake")
+  include("/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/my_first_test[1]_tests.cmake")
+else()
+  add_test(my_first_test_NOT_BUILT my_first_test_NOT_BUILT)
+endif()

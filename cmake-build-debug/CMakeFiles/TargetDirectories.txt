@@ -1,10 +1,11 @@
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/install/strip.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/install/local.dir
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/install.dir
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/food_lib.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/HW1.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/install.dir
-/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles/list_install_components.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/tests/CMakeFiles/install/strip.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/tests/CMakeFiles/install/local.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/tests/CMakeFiles/my_first_test.dir

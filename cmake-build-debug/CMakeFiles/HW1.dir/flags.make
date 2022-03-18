@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/include
+C_INCLUDES = -I/include -I/home/zaynutdin/CLionProjects/tp_cpp_hw1
 
-C_FLAGS = -Werror -Wextra -Wpedantic -Wall -g -std=gnu99
+C_FLAGS = -Wall -Wpedantic -Wextra -Werror -fprofile-arcs -ftest-coverage -fPIC -O0 -g -std=gnu99
 

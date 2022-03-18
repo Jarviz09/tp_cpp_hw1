@@ -101,17 +101,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,6 +112,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,6 +168,19 @@ HW1: cmake_check_build_system
 HW1/fast:
 	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/build
 .PHONY : HW1/fast
+
+#=============================================================================
+# Target rules for targets named food_lib
+
+# Build rule for target.
+food_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 food_lib
+.PHONY : food_lib
+
+# fast build rule for target.
+food_lib/fast:
+	$(MAKE) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/build
+.PHONY : food_lib/fast
 
 #=============================================================================
 # Target rules for targets named my_first_test
@@ -267,7 +280,7 @@ src/food.o: src/food.c.o
 
 # target to build an object file
 src/food.c.o:
-	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/food.c.o
+	$(MAKE) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.o
 .PHONY : src/food.c.o
 
 src/food.i: src/food.c.i
@@ -276,7 +289,7 @@ src/food.i: src/food.c.i
 
 # target to preprocess a source file
 src/food.c.i:
-	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/food.c.i
+	$(MAKE) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.i
 .PHONY : src/food.c.i
 
 src/food.s: src/food.c.s
@@ -285,7 +298,7 @@ src/food.s: src/food.c.s
 
 # target to generate assembly for a file
 src/food.c.s:
-	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/food.c.s
+	$(MAKE) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.s
 .PHONY : src/food.c.s
 
 src/utils.o: src/utils.c.o
@@ -294,7 +307,7 @@ src/utils.o: src/utils.c.o
 
 # target to build an object file
 src/utils.c.o:
-	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/utils.c.o
+	$(MAKE) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.o
 .PHONY : src/utils.c.o
 
 src/utils.i: src/utils.c.i
@@ -303,7 +316,7 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
-	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/utils.c.i
+	$(MAKE) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -312,7 +325,7 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
-	$(MAKE) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/utils.c.s
+	$(MAKE) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 # Help Target
@@ -325,9 +338,10 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... HW1"
+	@echo "... edit_cache"
+	@echo "... food_lib"
 	@echo "... my_first_test"
 	@echo "... gmock_main"
 	@echo "... gmock"

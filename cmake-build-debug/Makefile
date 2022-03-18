@@ -89,26 +89,6 @@ install/local/fast: preinstall/fast
 	/home/zaynutdin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/zaynutdin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/zaynutdin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -129,6 +109,26 @@ list_install_components:
 # Special rule for the target list_install_components
 list_install_components/fast: list_install_components
 .PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/zaynutdin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/zaynutdin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.5744.254/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -160,6 +160,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named food_lib
+
+# Build rule for target.
+food_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 food_lib
+.PHONY : food_lib
+
+# fast build rule for target.
+food_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/build
+.PHONY : food_lib/fast
 
 #=============================================================================
 # Target rules for targets named HW1
@@ -268,7 +281,7 @@ src/food.o: src/food.c.o
 
 # target to build an object file
 src/food.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/food.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.o
 .PHONY : src/food.c.o
 
 src/food.i: src/food.c.i
@@ -276,7 +289,7 @@ src/food.i: src/food.c.i
 
 # target to preprocess a source file
 src/food.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/food.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.i
 .PHONY : src/food.c.i
 
 src/food.s: src/food.c.s
@@ -284,7 +297,7 @@ src/food.s: src/food.c.s
 
 # target to generate assembly for a file
 src/food.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/food.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.s
 .PHONY : src/food.c.s
 
 src/utils.o: src/utils.c.o
@@ -292,7 +305,7 @@ src/utils.o: src/utils.c.o
 
 # target to build an object file
 src/utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.o
 .PHONY : src/utils.c.o
 
 src/utils.i: src/utils.c.i
@@ -300,7 +313,7 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -308,7 +321,7 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/src/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 # Help Target
@@ -324,6 +337,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... HW1"
+	@echo "... food_lib"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

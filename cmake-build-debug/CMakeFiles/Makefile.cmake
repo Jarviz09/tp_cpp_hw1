@@ -85,6 +85,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/food_lib.dir/DependInfo.cmake"
   "CMakeFiles/HW1.dir/DependInfo.cmake"
   "tests/CMakeFiles/my_first_test.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"

@@ -1,1 +1,1 @@
-/usr/bin/c++ -Werror -Wextra -Wpedantic -Wall -g CMakeFiles/my_first_test.dir/tests.cpp.o -o my_first_test  ../lib/libgtest_maind.a ../lib/libgtestd.a -lpthread 
+/usr/bin/c++ -fprofile-arcs -ftest-coverage -O0 -g CMakeFiles/my_first_test.dir/tests.cpp.o CMakeFiles/my_first_test.dir/__/src/utils.c.o CMakeFiles/my_first_test.dir/__/src/food.c.o -o my_first_test  ../lib/libgtest_maind.a ../lib/libgtestd.a -lpthread 

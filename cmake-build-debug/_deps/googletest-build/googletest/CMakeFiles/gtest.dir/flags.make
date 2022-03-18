@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-src/googletest/include -I/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-src/googletest
 
-CXX_FLAGS = -Werror -Wextra -Wpedantic -Wall -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
+CXX_FLAGS = -fprofile-arcs -ftest-coverage -O0 -g -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++17
 

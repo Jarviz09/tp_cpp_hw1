@@ -2,9 +2,10 @@
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/install.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/list_install_components.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/rebuild_cache.dir
-/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/edit_cache.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/install/local.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/HW1.dir
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/edit_cache.dir
+/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/food_lib.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests/CMakeFiles/install/strip.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests/CMakeFiles/install/local.dir
 /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests/CMakeFiles/install.dir

@@ -1,0 +1,34 @@
+name: Linters passes
+on: [ push ]
+defaults:
+  run:
+    shell: bash
+jobs:
+  Building:
+    name: Build hw solution
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Building
+        run: |
+          ./scripts/build.sh
+          cd build
+          make
+  Formating:
+    name: Automatic formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checking coding style
+        run: |
+          ./scripts/clang-formating.sh
+  Linters:
+    name: Running linters check
+    runs-on: ubuntu-latest
+    needs: Formating
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run linters checks
+        run: |
+          ./scripts/build.sh
+          ./scripts/linters.sh

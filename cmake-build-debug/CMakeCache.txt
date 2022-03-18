@@ -286,6 +286,9 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable generating coverage report
+COVERAGE:BOOL=OFF
+
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps
 
@@ -342,6 +345,9 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//The directory containing a CMake configuration file for codecov.
+codecov_DIR:PATH=codecov_DIR-NOTFOUND
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-build/googlemock

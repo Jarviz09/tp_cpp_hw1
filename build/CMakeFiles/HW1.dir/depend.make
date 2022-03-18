@@ -5,11 +5,3 @@ CMakeFiles/HW1.dir/main.c.o: ../include/food.h
 CMakeFiles/HW1.dir/main.c.o: ../include/utils.h
 CMakeFiles/HW1.dir/main.c.o: ../main.c
 
-CMakeFiles/HW1.dir/src/food.c.o: ../include/food.h
-CMakeFiles/HW1.dir/src/food.c.o: ../include/utils.h
-CMakeFiles/HW1.dir/src/food.c.o: ../src/food.c
-
-CMakeFiles/HW1.dir/src/utils.c.o: ../include/food.h
-CMakeFiles/HW1.dir/src/utils.c.o: ../include/utils.h
-CMakeFiles/HW1.dir/src/utils.c.o: ../src/utils.c
-
