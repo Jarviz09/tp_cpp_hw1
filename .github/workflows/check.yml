@@ -13,8 +13,7 @@ jobs:
       - name: Building
         run: |
           ./scripts/build.sh
-          cd build
-          make
+
   Formating:
     name: Automatic formatting
     runs-on: ubuntu-latest
