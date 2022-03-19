@@ -24,7 +24,7 @@ message("Google C++ Testing Framework loaded")
 
 file(GLOB TestsSRC "tests/*.cpp")
 
-add_executable(my_first_test tests.cpp)
+add_executable(my_first_test tests.cpp ../project/src/utils.c ../project/src/food.c)
 target_link_libraries(my_first_test gtest_main)
 target_include_directories(my_first_test PRIVATE ../project)
 
