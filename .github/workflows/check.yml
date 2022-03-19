@@ -1,0 +1,60 @@
+name: Github Actions
+on: [ push ]
+defaults:
+  run:
+    shell: bash
+jobs:
+  Building:
+    name: Build hw solution
+    container: leshiy1295/gcc_linters_valgrind_cmake_gtest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Building
+        run: |
+          ./scripts/build.sh
+  Formating:
+    name: Automatic formatting
+    runs-on: ubuntu-latest
+    needs: Building
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checking coding style
+        run: |
+          ./scripts/clang-formating.sh
+
+  Linters:
+    name: Running linters check
+    runs-on: ubuntu-latest
+    needs: Formating
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run linters checks
+        run: |
+          ./scripts/build.sh
+          ./scripts/linters.sh
+  Memory:
+    name: Running memory leaks check
+    container: leshiy1295/gcc_linters_valgrind_cmake_gtest
+    runs-on: ubuntu-latest
+    needs: Linters
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run memory check
+        run: |
+          gcc -I . project/main.c project/src/*.c
+          valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./a.out ration.txt
+  Test:
+    runs-on: ubuntu-latest
+    container: leshiy1295/gcc_linters_valgrind_cmake_gtest
+    name: Run tests check with valgrind
+    needs: Memory
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run: |
+          ./scripts/build.sh
+          valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./build/tests/my_first_test
+
+
+          
