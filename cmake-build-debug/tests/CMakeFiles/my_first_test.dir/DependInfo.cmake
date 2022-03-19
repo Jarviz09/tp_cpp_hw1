@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c" "tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.o" "gcc" "tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.o.d"
+  "/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c" "tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.o" "gcc" "tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.o.d"
   "/home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/tests.cpp" "tests/CMakeFiles/my_first_test.dir/tests.cpp.o" "gcc" "tests/CMakeFiles/my_first_test.dir/tests.cpp.o.d"
   )
 

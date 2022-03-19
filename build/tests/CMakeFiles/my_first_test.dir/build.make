@@ -70,19 +70,49 @@ tests/CMakeFiles/my_first_test.dir/tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_first_test.dir/tests.cpp.s"
 	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/tests.cpp -o CMakeFiles/my_first_test.dir/tests.cpp.s
 
+tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.o: tests/CMakeFiles/my_first_test.dir/flags.make
+tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.o: ../project/src/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.o"
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_first_test.dir/__/project/src/utils.c.o   -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c
+
+tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_first_test.dir/__/project/src/utils.c.i"
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c > CMakeFiles/my_first_test.dir/__/project/src/utils.c.i
+
+tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_first_test.dir/__/project/src/utils.c.s"
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c -o CMakeFiles/my_first_test.dir/__/project/src/utils.c.s
+
+tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.o: tests/CMakeFiles/my_first_test.dir/flags.make
+tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.o: ../project/src/food.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.o"
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/my_first_test.dir/__/project/src/food.c.o   -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c
+
+tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_first_test.dir/__/project/src/food.c.i"
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c > CMakeFiles/my_first_test.dir/__/project/src/food.c.i
+
+tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_first_test.dir/__/project/src/food.c.s"
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c -o CMakeFiles/my_first_test.dir/__/project/src/food.c.s
+
 # Object files for target my_first_test
 my_first_test_OBJECTS = \
-"CMakeFiles/my_first_test.dir/tests.cpp.o"
+"CMakeFiles/my_first_test.dir/tests.cpp.o" \
+"CMakeFiles/my_first_test.dir/__/project/src/utils.c.o" \
+"CMakeFiles/my_first_test.dir/__/project/src/food.c.o"
 
 # External object files for target my_first_test
 my_first_test_EXTERNAL_OBJECTS =
 
 tests/my_first_test: tests/CMakeFiles/my_first_test.dir/tests.cpp.o
+tests/my_first_test: tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.o
+tests/my_first_test: tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.o
 tests/my_first_test: tests/CMakeFiles/my_first_test.dir/build.make
 tests/my_first_test: lib/libgtest_main.a
 tests/my_first_test: lib/libgtest.a
 tests/my_first_test: tests/CMakeFiles/my_first_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable my_first_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable my_first_test"
 	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_first_test.dir/link.txt --verbose=$(VERBOSE)
 	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests && /usr/bin/cmake -D TEST_TARGET=my_first_test -D TEST_EXECUTABLE=/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests/my_first_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=my_first_test_TESTS -D CTEST_FILE=/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/tests/my_first_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -P /usr/share/cmake-3.16/Modules/GoogleTestAddTests.cmake
 

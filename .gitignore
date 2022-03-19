@@ -23,18 +23,18 @@
 *.lo
 
 # Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+#*.dll
+#*.so
+#*.so.*
+#*.dylib
+#
+## Executables
+#*.exe
+#*.out
+#*.app
+#*.i*86
+#*.x86_64
+#*.hex
 
 # Debug files
 *.idea
@@ -53,6 +53,6 @@ Mkfile.old
 dkms.conf
 
 # directories
-build/*
+#build/*
 tmp/*
 cmake-build-debug/*

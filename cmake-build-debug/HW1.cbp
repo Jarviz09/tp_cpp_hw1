@@ -439,9 +439,11 @@
 		</Unit>
 		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c">
 			<Option target="food_lib"/>
+			<Option target="my_first_test"/>
 		</Unit>
 		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c">
 			<Option target="food_lib"/>
+			<Option target="my_first_test"/>
 		</Unit>
 		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/tests.cpp">
 			<Option target="my_first_test"/>
