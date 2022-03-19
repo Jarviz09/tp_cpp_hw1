@@ -44,4 +44,15 @@ jobs:
         run: |
           gcc -I . project/main.c project/src/*.c
           valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./a.out ration.txt
+  Test:
+    runs-on: ubuntu-latest
+    container: leshiy1295/gcc_linters_valgrind_cmake_gtest
+    name: Run tests check
+    needs: Memory
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run: |
+          ./scripts/run-tests.sh
+
           
