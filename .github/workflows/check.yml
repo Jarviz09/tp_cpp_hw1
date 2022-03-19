@@ -35,6 +35,7 @@ jobs:
           ./scripts/linters.sh
   Memory:
     name: Running memory leaks check
+    container: leshiy1295/gcc_linters_valgrind_cmake_gtest
     runs-on: ubuntu-latest
     needs: Linters
     steps:
