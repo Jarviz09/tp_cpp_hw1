@@ -1,8 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/my_first_test.dir/__/project/src/food.c.o"
-  "CMakeFiles/my_first_test.dir/__/project/src/food.c.o.d"
-  "CMakeFiles/my_first_test.dir/__/project/src/utils.c.o"
-  "CMakeFiles/my_first_test.dir/__/project/src/utils.c.o.d"
   "CMakeFiles/my_first_test.dir/tests.cpp.o"
   "CMakeFiles/my_first_test.dir/tests.cpp.o.d"
   "my_first_test"
@@ -11,6 +7,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
+foreach(lang CXX)
   include(CMakeFiles/my_first_test.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

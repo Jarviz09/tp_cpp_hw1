@@ -30,6 +30,7 @@
 
 # Executables
 *.exe
+*.out
 *.app
 *.i*86
 *.x86_64
@@ -52,6 +53,6 @@ Mkfile.old
 dkms.conf
 
 # directories
-build/
-tmp/
-cmake-build-debug/
+build/*
+tmp/*
+cmake-build-debug/*
