@@ -110,7 +110,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/include"/>
+					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/include"/>
 					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
@@ -134,7 +134,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/include"/>
+					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/include"/>
 					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
@@ -178,7 +178,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/.."/>
+					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/../project"/>
 					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
 					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
@@ -203,7 +203,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/.."/>
+					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/../project"/>
 					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-src/googletest/include"/>
 					<Add directory="/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-src/googletest"/>
 					<Add directory="/usr/include/c++/9"/>
@@ -434,14 +434,14 @@
 		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/_deps/googletest-src/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/main.c">
+		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/main.c">
 			<Option target="HW1"/>
 		</Unit>
-		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c">
+		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c">
 			<Option target="food_lib"/>
 			<Option target="my_first_test"/>
 		</Unit>
-		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c">
+		<Unit filename="/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c">
 			<Option target="food_lib"/>
 			<Option target="my_first_test"/>
 		</Unit>

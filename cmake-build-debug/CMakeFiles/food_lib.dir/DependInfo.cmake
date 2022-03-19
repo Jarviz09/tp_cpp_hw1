@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c" "CMakeFiles/food_lib.dir/src/food.c.o" "gcc" "CMakeFiles/food_lib.dir/src/food.c.o.d"
-  "/home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c" "CMakeFiles/food_lib.dir/src/utils.c.o" "gcc" "CMakeFiles/food_lib.dir/src/utils.c.o.d"
+  "/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c" "CMakeFiles/food_lib.dir/project/src/food.c.o" "gcc" "CMakeFiles/food_lib.dir/project/src/food.c.o.d"
+  "/home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c" "CMakeFiles/food_lib.dir/project/src/utils.c.o" "gcc" "CMakeFiles/food_lib.dir/project/src/utils.c.o.d"
   )
 
 # Targets to which this target links.

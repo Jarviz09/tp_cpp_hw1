@@ -252,77 +252,77 @@ gtest/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
-main.o: main.c.o
-.PHONY : main.o
+project/main.o: project/main.c.o
+.PHONY : project/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/main.c.o
-.PHONY : main.c.o
+project/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/project/main.c.o
+.PHONY : project/main.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+project/main.i: project/main.c.i
+.PHONY : project/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/main.c.i
-.PHONY : main.c.i
+project/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/project/main.c.i
+.PHONY : project/main.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+project/main.s: project/main.c.s
+.PHONY : project/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/main.c.s
-.PHONY : main.c.s
+project/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HW1.dir/build.make CMakeFiles/HW1.dir/project/main.c.s
+.PHONY : project/main.c.s
 
-src/food.o: src/food.c.o
-.PHONY : src/food.o
+project/src/food.o: project/src/food.c.o
+.PHONY : project/src/food.o
 
 # target to build an object file
-src/food.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.o
-.PHONY : src/food.c.o
+project/src/food.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/project/src/food.c.o
+.PHONY : project/src/food.c.o
 
-src/food.i: src/food.c.i
-.PHONY : src/food.i
+project/src/food.i: project/src/food.c.i
+.PHONY : project/src/food.i
 
 # target to preprocess a source file
-src/food.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.i
-.PHONY : src/food.c.i
+project/src/food.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/project/src/food.c.i
+.PHONY : project/src/food.c.i
 
-src/food.s: src/food.c.s
-.PHONY : src/food.s
+project/src/food.s: project/src/food.c.s
+.PHONY : project/src/food.s
 
 # target to generate assembly for a file
-src/food.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/food.c.s
-.PHONY : src/food.c.s
+project/src/food.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/project/src/food.c.s
+.PHONY : project/src/food.c.s
 
-src/utils.o: src/utils.c.o
-.PHONY : src/utils.o
+project/src/utils.o: project/src/utils.c.o
+.PHONY : project/src/utils.o
 
 # target to build an object file
-src/utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.o
-.PHONY : src/utils.c.o
+project/src/utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/project/src/utils.c.o
+.PHONY : project/src/utils.c.o
 
-src/utils.i: src/utils.c.i
-.PHONY : src/utils.i
+project/src/utils.i: project/src/utils.c.i
+.PHONY : project/src/utils.i
 
 # target to preprocess a source file
-src/utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.i
-.PHONY : src/utils.c.i
+project/src/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/project/src/utils.c.i
+.PHONY : project/src/utils.c.i
 
-src/utils.s: src/utils.c.s
-.PHONY : src/utils.s
+project/src/utils.s: project/src/utils.c.s
+.PHONY : project/src/utils.s
 
 # target to generate assembly for a file
-src/utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/src/utils.c.s
-.PHONY : src/utils.c.s
+project/src/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/food_lib.dir/build.make CMakeFiles/food_lib.dir/project/src/utils.c.s
+.PHONY : project/src/utils.c.s
 
 # Help Target
 help:
@@ -343,15 +343,15 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... my_first_test"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... src/food.o"
-	@echo "... src/food.i"
-	@echo "... src/food.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
+	@echo "... project/main.o"
+	@echo "... project/main.i"
+	@echo "... project/main.s"
+	@echo "... project/src/food.o"
+	@echo "... project/src/food.i"
+	@echo "... project/src/food.s"
+	@echo "... project/src/utils.o"
+	@echo "... project/src/utils.i"
+	@echo "... project/src/utils.s"
 .PHONY : help
 
 

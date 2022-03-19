@@ -69,44 +69,44 @@ include CMakeFiles/food_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/food_lib.dir/flags.make
 
-CMakeFiles/food_lib.dir/src/food.c.o: CMakeFiles/food_lib.dir/flags.make
-CMakeFiles/food_lib.dir/src/food.c.o: ../src/food.c
-CMakeFiles/food_lib.dir/src/food.c.o: CMakeFiles/food_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/food_lib.dir/src/food.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/food_lib.dir/src/food.c.o -MF CMakeFiles/food_lib.dir/src/food.c.o.d -o CMakeFiles/food_lib.dir/src/food.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c
+CMakeFiles/food_lib.dir/project/src/food.c.o: CMakeFiles/food_lib.dir/flags.make
+CMakeFiles/food_lib.dir/project/src/food.c.o: ../project/src/food.c
+CMakeFiles/food_lib.dir/project/src/food.c.o: CMakeFiles/food_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/food_lib.dir/project/src/food.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/food_lib.dir/project/src/food.c.o -MF CMakeFiles/food_lib.dir/project/src/food.c.o.d -o CMakeFiles/food_lib.dir/project/src/food.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c
 
-CMakeFiles/food_lib.dir/src/food.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/food_lib.dir/src/food.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c > CMakeFiles/food_lib.dir/src/food.c.i
+CMakeFiles/food_lib.dir/project/src/food.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/food_lib.dir/project/src/food.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c > CMakeFiles/food_lib.dir/project/src/food.c.i
 
-CMakeFiles/food_lib.dir/src/food.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/food_lib.dir/src/food.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/food.c -o CMakeFiles/food_lib.dir/src/food.c.s
+CMakeFiles/food_lib.dir/project/src/food.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/food_lib.dir/project/src/food.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/food.c -o CMakeFiles/food_lib.dir/project/src/food.c.s
 
-CMakeFiles/food_lib.dir/src/utils.c.o: CMakeFiles/food_lib.dir/flags.make
-CMakeFiles/food_lib.dir/src/utils.c.o: ../src/utils.c
-CMakeFiles/food_lib.dir/src/utils.c.o: CMakeFiles/food_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/food_lib.dir/src/utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/food_lib.dir/src/utils.c.o -MF CMakeFiles/food_lib.dir/src/utils.c.o.d -o CMakeFiles/food_lib.dir/src/utils.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c
+CMakeFiles/food_lib.dir/project/src/utils.c.o: CMakeFiles/food_lib.dir/flags.make
+CMakeFiles/food_lib.dir/project/src/utils.c.o: ../project/src/utils.c
+CMakeFiles/food_lib.dir/project/src/utils.c.o: CMakeFiles/food_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/food_lib.dir/project/src/utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/food_lib.dir/project/src/utils.c.o -MF CMakeFiles/food_lib.dir/project/src/utils.c.o.d -o CMakeFiles/food_lib.dir/project/src/utils.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c
 
-CMakeFiles/food_lib.dir/src/utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/food_lib.dir/src/utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c > CMakeFiles/food_lib.dir/src/utils.c.i
+CMakeFiles/food_lib.dir/project/src/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/food_lib.dir/project/src/utils.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c > CMakeFiles/food_lib.dir/project/src/utils.c.i
 
-CMakeFiles/food_lib.dir/src/utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/food_lib.dir/src/utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/src/utils.c -o CMakeFiles/food_lib.dir/src/utils.c.s
+CMakeFiles/food_lib.dir/project/src/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/food_lib.dir/project/src/utils.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/src/utils.c -o CMakeFiles/food_lib.dir/project/src/utils.c.s
 
 # Object files for target food_lib
 food_lib_OBJECTS = \
-"CMakeFiles/food_lib.dir/src/food.c.o" \
-"CMakeFiles/food_lib.dir/src/utils.c.o"
+"CMakeFiles/food_lib.dir/project/src/food.c.o" \
+"CMakeFiles/food_lib.dir/project/src/utils.c.o"
 
 # External object files for target food_lib
 food_lib_EXTERNAL_OBJECTS =
 
-libfood_lib.a: CMakeFiles/food_lib.dir/src/food.c.o
-libfood_lib.a: CMakeFiles/food_lib.dir/src/utils.c.o
+libfood_lib.a: CMakeFiles/food_lib.dir/project/src/food.c.o
+libfood_lib.a: CMakeFiles/food_lib.dir/project/src/utils.c.o
 libfood_lib.a: CMakeFiles/food_lib.dir/build.make
 libfood_lib.a: CMakeFiles/food_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libfood_lib.a"

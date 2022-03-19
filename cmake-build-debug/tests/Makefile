@@ -175,53 +175,53 @@ my_first_test/fast:
 	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/build
 .PHONY : my_first_test/fast
 
-__/src/food.o: __/src/food.c.o
-.PHONY : __/src/food.o
+__/project/src/food.o: __/project/src/food.c.o
+.PHONY : __/project/src/food.o
 
 # target to build an object file
-__/src/food.c.o:
-	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/src/food.c.o
-.PHONY : __/src/food.c.o
+__/project/src/food.c.o:
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.o
+.PHONY : __/project/src/food.c.o
 
-__/src/food.i: __/src/food.c.i
-.PHONY : __/src/food.i
+__/project/src/food.i: __/project/src/food.c.i
+.PHONY : __/project/src/food.i
 
 # target to preprocess a source file
-__/src/food.c.i:
-	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/src/food.c.i
-.PHONY : __/src/food.c.i
+__/project/src/food.c.i:
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.i
+.PHONY : __/project/src/food.c.i
 
-__/src/food.s: __/src/food.c.s
-.PHONY : __/src/food.s
+__/project/src/food.s: __/project/src/food.c.s
+.PHONY : __/project/src/food.s
 
 # target to generate assembly for a file
-__/src/food.c.s:
-	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/src/food.c.s
-.PHONY : __/src/food.c.s
+__/project/src/food.c.s:
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/project/src/food.c.s
+.PHONY : __/project/src/food.c.s
 
-__/src/utils.o: __/src/utils.c.o
-.PHONY : __/src/utils.o
+__/project/src/utils.o: __/project/src/utils.c.o
+.PHONY : __/project/src/utils.o
 
 # target to build an object file
-__/src/utils.c.o:
-	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/src/utils.c.o
-.PHONY : __/src/utils.c.o
+__/project/src/utils.c.o:
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.o
+.PHONY : __/project/src/utils.c.o
 
-__/src/utils.i: __/src/utils.c.i
-.PHONY : __/src/utils.i
+__/project/src/utils.i: __/project/src/utils.c.i
+.PHONY : __/project/src/utils.i
 
 # target to preprocess a source file
-__/src/utils.c.i:
-	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/src/utils.c.i
-.PHONY : __/src/utils.c.i
+__/project/src/utils.c.i:
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.i
+.PHONY : __/project/src/utils.c.i
 
-__/src/utils.s: __/src/utils.c.s
-.PHONY : __/src/utils.s
+__/project/src/utils.s: __/project/src/utils.c.s
+.PHONY : __/project/src/utils.s
 
 # target to generate assembly for a file
-__/src/utils.c.s:
-	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/src/utils.c.s
-.PHONY : __/src/utils.c.s
+__/project/src/utils.c.s:
+	cd /home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/my_first_test.dir/build.make tests/CMakeFiles/my_first_test.dir/__/project/src/utils.c.s
+.PHONY : __/project/src/utils.c.s
 
 tests.o: tests.cpp.o
 .PHONY : tests.o
@@ -260,12 +260,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... my_first_test"
-	@echo "... __/src/food.o"
-	@echo "... __/src/food.i"
-	@echo "... __/src/food.s"
-	@echo "... __/src/utils.o"
-	@echo "... __/src/utils.i"
-	@echo "... __/src/utils.s"
+	@echo "... __/project/src/food.o"
+	@echo "... __/project/src/food.i"
+	@echo "... __/project/src/food.s"
+	@echo "... __/project/src/utils.o"
+	@echo "... __/project/src/utils.i"
+	@echo "... __/project/src/utils.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

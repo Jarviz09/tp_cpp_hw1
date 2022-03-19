@@ -69,28 +69,28 @@ include CMakeFiles/HW1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HW1.dir/flags.make
 
-CMakeFiles/HW1.dir/main.c.o: CMakeFiles/HW1.dir/flags.make
-CMakeFiles/HW1.dir/main.c.o: ../main.c
-CMakeFiles/HW1.dir/main.c.o: CMakeFiles/HW1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/HW1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/HW1.dir/main.c.o -MF CMakeFiles/HW1.dir/main.c.o.d -o CMakeFiles/HW1.dir/main.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/main.c
+CMakeFiles/HW1.dir/project/main.c.o: CMakeFiles/HW1.dir/flags.make
+CMakeFiles/HW1.dir/project/main.c.o: ../project/main.c
+CMakeFiles/HW1.dir/project/main.c.o: CMakeFiles/HW1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zaynutdin/CLionProjects/tp_cpp_hw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/HW1.dir/project/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/HW1.dir/project/main.c.o -MF CMakeFiles/HW1.dir/project/main.c.o.d -o CMakeFiles/HW1.dir/project/main.c.o -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/main.c
 
-CMakeFiles/HW1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HW1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/main.c > CMakeFiles/HW1.dir/main.c.i
+CMakeFiles/HW1.dir/project/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HW1.dir/project/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/main.c > CMakeFiles/HW1.dir/project/main.c.i
 
-CMakeFiles/HW1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HW1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/main.c -o CMakeFiles/HW1.dir/main.c.s
+CMakeFiles/HW1.dir/project/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HW1.dir/project/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zaynutdin/CLionProjects/tp_cpp_hw1/project/main.c -o CMakeFiles/HW1.dir/project/main.c.s
 
 # Object files for target HW1
 HW1_OBJECTS = \
-"CMakeFiles/HW1.dir/main.c.o"
+"CMakeFiles/HW1.dir/project/main.c.o"
 
 # External object files for target HW1
 HW1_EXTERNAL_OBJECTS =
 
-HW1: CMakeFiles/HW1.dir/main.c.o
+HW1: CMakeFiles/HW1.dir/project/main.c.o
 HW1: CMakeFiles/HW1.dir/build.make
 HW1: libfood_lib.a
 HW1: CMakeFiles/HW1.dir/link.txt

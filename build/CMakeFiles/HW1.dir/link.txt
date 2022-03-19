@@ -1,0 +1,1 @@
+/usr/bin/cc    -lgcov CMakeFiles/HW1.dir/project/main.c.o  -o HW1  libfood_lib.a 

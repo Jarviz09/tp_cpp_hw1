@@ -6,9 +6,12 @@ pip install gcovr
 
 cd $BUILD_DIRECTORY || (echo "Error. $BUILD_DIRECTORY not created." && exit 1)
 ctest
-cd ..
+cd ../..
 EXCLUDING_FILES=".*_deps.*|.*tests.*|project/main.c"
-#EXCLUDING_FILES=".*_deps.*"
-REPORT_FILE_NAME="coverage.xml"
-gcovr -r . -e $EXCLUDING_FILES -o $REPORT_FILE_NAME --xml
-lcov -t "./" -o coverage.info -c -d
+##EXCLUDING_FILES=".*_deps.*"
+#REPORT_FILE_NAME="coverage.xml"
+g++ -I project/include tests/tests.cpp project/src/utils.c project/src/food.c -lgtest -lpthread -o test_check_1
+./test_check_1
+gcc -I ./project/include project/main.c project/src/*.c
+./a.out ration.txt
+gcovr -r . -e $EXCLUDING_FILES

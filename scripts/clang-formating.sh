@@ -10,9 +10,9 @@ touch $TMP_FORM_FILE
 #sudo apt install clang-format >> $LOG_FILE
 
 STYLE="Google"
-FORMATING_FILES=("./main.c" "./src/food.c" \
-                 "./include/food.h" "include/utils.h" \
-                 "src/utils.c" "./tests/tests.cpp")
+FORMATING_FILES=("./project/main.c" "./project/src/food.c" \
+                 "./project/include/food.h" "./project/include/utils.h" \
+                 "./project/src/utils.c" "./tests/tests.cpp")
 for file in ${FORMATING_FILES[*]}
 do
     echo $file

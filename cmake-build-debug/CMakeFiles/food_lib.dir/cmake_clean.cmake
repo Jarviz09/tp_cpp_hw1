@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/food_lib.dir/src/food.c.o"
-  "CMakeFiles/food_lib.dir/src/food.c.o.d"
-  "CMakeFiles/food_lib.dir/src/utils.c.o"
-  "CMakeFiles/food_lib.dir/src/utils.c.o.d"
+  "CMakeFiles/food_lib.dir/project/src/food.c.o"
+  "CMakeFiles/food_lib.dir/project/src/food.c.o.d"
+  "CMakeFiles/food_lib.dir/project/src/utils.c.o"
+  "CMakeFiles/food_lib.dir/project/src/utils.c.o.d"
   "libfood_lib.a"
   "libfood_lib.pdb"
 )
