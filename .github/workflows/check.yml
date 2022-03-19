@@ -53,6 +53,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run tests
         run: |
-          valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./build/tests/my_first_test
+          valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./tests/my_first_test
 
           
