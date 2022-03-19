@@ -21,17 +21,6 @@ jobs:
       - name: Checking coding style
         run: |
           ./scripts/clang-formating.sh
-  Test:
-    runs-on: ubuntu-latest
-    container: leshiy1295/gcc_linters_valgrind_cmake_gtest
-    name: Run tests check with valgrind
-    needs: Formating
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run tests
-        run: |
-          ./scripts/build.sh
-          valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./build/tests/my_first_test
 
   Linters:
     name: Running linters check
@@ -54,6 +43,17 @@ jobs:
         run: |
           gcc -I . project/main.c project/src/*.c
           valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./a.out ration.txt
+  Test:
+    runs-on: ubuntu-latest
+    container: leshiy1295/gcc_linters_valgrind_cmake_gtest
+    name: Run tests check with valgrind
+    needs: Memory
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run: |
+          ./scripts/build.sh
+          valgrind --tool=memcheck --leak-check=full -s --track-origins=yes ./build/tests/my_first_test
 
 
           
