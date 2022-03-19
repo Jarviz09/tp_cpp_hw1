@@ -1,5 +1,5 @@
-#ifndef HW1_FOOD_H
-#define HW1_FOOD_H
+#ifndef PROJECT_INCLUDE_FOOD_H_
+#define PROJECT_INCLUDE_FOOD_H_
 #include <bits/types/FILE.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -35,4 +35,4 @@ typedef struct selected_array {
 composite_ration init_ration(FILE* fp);
 selected_array select_breakfast(composite_ration, filter_fields);
 
-#endif  // HW1_FOOD_H
+#endif  // PROJECT_INCLUDE_FOOD_H_

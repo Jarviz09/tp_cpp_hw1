@@ -9,7 +9,7 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/zaynutdin/CLionProjects/tp_cpp_hw1/tests/../project -isystem /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/_deps/googletest-src/googletest/include -isystem /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/_deps/googletest-src/googletest 
 
-CXX_FLAGS =  -fprofile-arcs -ftest-coverage --coverage -fprofile-arcs -ftest-coverage --coverage   -std=gnu++17
+CXX_FLAGS =  -Wall -Wpedantic -Wextra -Werror -fprofile-arcs -ftest-coverage -fPIC -O0 -fprofile-arcs -ftest-coverage --coverage   -std=gnu++17
 
 CXX_DEFINES = 
 

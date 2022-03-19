@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7cca6/fast && /usr/bin/make -f CMakeFiles/cmTC_7cca6.dir/build.make CMakeFiles/cmTC_7cca6.dir/build
+Run Build Command(s):/usr/bin/make cmTC_2700e/fast && /usr/bin/make -f CMakeFiles/cmTC_2700e.dir/build.make CMakeFiles/cmTC_2700e.dir/build
 make[1]: вход в каталог «/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_7cca6.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -std=gnu99 -o CMakeFiles/cmTC_7cca6.dir/src.c.o   -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_7cca6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cca6.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD   -lgcov  CMakeFiles/cmTC_7cca6.dir/src.c.o  -o cmTC_7cca6 
-/usr/bin/ld: CMakeFiles/cmTC_7cca6.dir/src.c.o: в функции «main»:
+Building C object CMakeFiles/cmTC_2700e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2700e.dir/src.c.o   -c /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2700e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2700e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_2700e.dir/src.c.o  -o cmTC_2700e 
+/usr/bin/ld: CMakeFiles/cmTC_2700e.dir/src.c.o: в функции «main»:
 src.c:(.text+0x46): неопределённая ссылка на «pthread_create»
 /usr/bin/ld: src.c:(.text+0x52): неопределённая ссылка на «pthread_detach»
 /usr/bin/ld: src.c:(.text+0x63): неопределённая ссылка на «pthread_join»
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_7cca6.dir/build.make:87: cmTC_7cca6] Ошибка 1
+make[1]: *** [CMakeFiles/cmTC_2700e.dir/build.make:87: cmTC_2700e] Ошибка 1
 make[1]: выход из каталога «/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp»
-make: *** [Makefile:121: cmTC_7cca6/fast] Ошибка 2
+make: *** [Makefile:121: cmTC_2700e/fast] Ошибка 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_0fceb/fast && /usr/bin/make -f CMakeFiles/cmTC_0fceb.dir/build.make CMakeFiles/cmTC_0fceb.dir/build
+Run Build Command(s):/usr/bin/make cmTC_aa9b7/fast && /usr/bin/make -f CMakeFiles/cmTC_aa9b7.dir/build.make CMakeFiles/cmTC_aa9b7.dir/build
 make[1]: вход в каталог «/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp»
-Building C object CMakeFiles/cmTC_0fceb.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu99 -o CMakeFiles/cmTC_0fceb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_0fceb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fceb.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create   -lgcov  CMakeFiles/cmTC_0fceb.dir/CheckFunctionExists.c.o  -o cmTC_0fceb  -lpthreads 
+Building C object CMakeFiles/cmTC_aa9b7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_aa9b7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aa9b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa9b7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_aa9b7.dir/CheckFunctionExists.c.o  -o cmTC_aa9b7  -lpthreads 
 /usr/bin/ld: невозможно найти -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_0fceb.dir/build.make:87: cmTC_0fceb] Ошибка 1
+make[1]: *** [CMakeFiles/cmTC_aa9b7.dir/build.make:87: cmTC_aa9b7] Ошибка 1
 make[1]: выход из каталога «/home/zaynutdin/CLionProjects/tp_cpp_hw1/build/CMakeFiles/CMakeTmp»
-make: *** [Makefile:121: cmTC_0fceb/fast] Ошибка 2
+make: *** [Makefile:121: cmTC_aa9b7/fast] Ошибка 2
 
 
 

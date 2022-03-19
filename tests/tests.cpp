@@ -6,8 +6,6 @@
 extern "C" {
 #include "include/food.h"
 #include "include/utils.h"
-#include "src/food.c"
-#include "src/utils.c"
 }
 
 TEST(TestOpenedFile, isOpened) {

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-find_package(GTest REQUIRED)
+#find_package(GTest REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
 SET(GCC_COVERAGE_COMPILE_FLAGS "-fprofile-arcs -ftest-coverage --coverage")
 SET(GCC_COVERAGE_LINK_FLAGS  "-lgcov")

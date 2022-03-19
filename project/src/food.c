@@ -1,8 +1,8 @@
-#include "project/include/food.h"
+#include "../include/food.h"
 
 #include <string.h>
 
-#include "project/include/utils.h"
+#include "../include/utils.h"
 
 #define MAX_NAME_SIZE 50
 

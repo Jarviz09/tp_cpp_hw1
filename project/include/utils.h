@@ -1,7 +1,7 @@
 
-#ifndef HW1_UTILS_H
-#define HW1_UTILS_H
-#include "food.h"
+#ifndef PROJECT_INCLUDE_UTILS_H_
+#define PROJECT_INCLUDE_UTILS_H_
+#include "./food.h"
 
 typedef enum {
   SUCCESS = 0,
@@ -20,4 +20,4 @@ void print_breakfast(selected_array);
 void free_ration(composite_ration);
 void free_selected(selected_array);
 
-#endif  // HW1_UTILS_H
+#endif  // PROJECT_INCLUDE_UTILS_H_
