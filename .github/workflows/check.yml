@@ -47,7 +47,7 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     container: leshiy1295/gcc_linters_valgrind_cmake_gtest
-    name: Run tests check
+    name: Run tests check with valgrind
     needs: Memory
     steps:
       - uses: actions/checkout@v2
